@@ -16,7 +16,11 @@ const app = function(){
       mainMap.addMarker(edinburgh);
   });
 
-
+ var whereAmI = document.querySelector('#whereAmI');
+ whereAmI.addEventListener('click', function(){
+   mainMap.changeLocations();
+   mainMap.addMarker();
+ })
 
 
 };

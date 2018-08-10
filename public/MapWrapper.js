@@ -18,3 +18,7 @@ MapWrapper.prototype.addMarker = function (coords) {
 MapWrapper.prototype.changeLocations = function (coords) {
   this.map.panTo(coords);
 };
+
+MapWrapper.prototype.currentLocation = function (coords) {
+  this.map.locate(coords);
+};
